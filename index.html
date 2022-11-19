@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="principal">
+      <h1 id="game-header">Vez de: X</h1>
+      <div class="game" id="game">
+        <div id="bloco1" onclick="setEscolha('bloco1')"></div>
+        <div id="bloco2" onclick="setEscolha('bloco2')"></div>
+        <div id="bloco3" onclick="setEscolha('bloco3')"></div>
+        <div id="bloco4" onclick="setEscolha('bloco4')"></div>
+        <div id="bloco5" onclick="setEscolha('bloco5')"></div>
+        <div id="bloco6" onclick="setEscolha('bloco6')"></div>
+        <div id="bloco7" onclick="setEscolha('bloco7')"></div>
+        <div id="bloco8" onclick="setEscolha('bloco8')"></div>
+        <div id="bloco9" onclick="setEscolha('bloco9')"></div>
+      </div>
+      <div id="vitoria">
+        <p id="mensagem-vitoria"></p>
+        <button class="novamente" onclick="jogarNovamente()">Jogar novamente</button>
+      </div>
+    </div>
+
+    <div class="pontuacao">
+      <h1 id="pontuacao-header">Pontuação:</h1>
+      <p id="jogadorx">Jogador (X):</p>
+      <p id="jogadoro">Jogador (O):</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
