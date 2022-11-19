@@ -60,14 +60,16 @@ function verificarVitoria(count) {
     if (count === true) {
       document.getElementById("mensagem-vitoria").innerHTML = "O vencedor foi: X";
       document.getElementById("vitoria").style.display = "block";
-      setPontuacao("x");
       travarJogo();
+      setPontuacao("x");
+      return
     }
     else if (count === false) {
       document.getElementById("mensagem-vitoria").innerHTML = "O vencedor foi: O";
       document.getElementById("vitoria").style.display = "block";
       travarJogo();
       setPontuacao("o");
+      return
 
     } else  {
       alert("houve algum erro");
